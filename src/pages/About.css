@@ -1,0 +1,15 @@
+.shadow-img{
+    position: relative;
+    transform-style: preserve-3d;
+  }
+  .shadow-img::before{
+    content: "";
+    position: absolute;
+    inset: -5px;
+    transform: matrix(1, 0, -0.03, 1, 0, 0);
+    transform: translate3d(10px, 8px, -1px); /* (X, Y, Z) */
+    background: linear-gradient(118.47deg, #EC008C -0.91%, #FC6767 104.91%);
+    filter: blur(34px);
+    opacity: 0.6;
+    border-radius: 70%; 
+  }
